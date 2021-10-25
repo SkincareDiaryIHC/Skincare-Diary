@@ -5,5 +5,5 @@ Integrantes:
 - Emilia Durán Santander
 - Ana Lucía García Osorio
 - Victoria Garibay Ayma
-- Yara Gonzalez Quesquén
+- Yara Gonzales Quesquén
 - Marycielo Quispe Palacios
