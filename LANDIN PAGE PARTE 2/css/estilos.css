@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Oswald:wght@600&family=Ubuntu+Condensed&display=swap');
 
 *{
     margin:0;
@@ -26,21 +26,36 @@
     height:0;
     background-color: transparent;
 }
+
 body{
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
 }
+
+a {
+    color: #0B0C0C;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+/*  HEADER */
+
 header{
     width: 100%;
-    height: 70px;
+    height: 80px;
     font-family: 'Oswald', sans-serif;
     position: fixed;
     top:0;
     right: 0;
     z-index: 100;
-    background: #BFA290;
+    background-color: #BFA290;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_header{
@@ -49,111 +64,141 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding: 0px 20px;
 }
 
-header.logo{
+.title{
     height: 100%;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.logo img{
+.title img{
+    margin: 5px;
     width: 70px;
+    border-radius:40px;
+    transition-duration: 0.5s;
 }
 
-.container_nav{
-    position: relative;
-    height: 100%;
+.title img:hover{
+    box-shadow: 5px 8px 26px currentcolor;
+    cursor:pointer;
 }
 
-nav ul h5 a{
+.title h5, .title h5 a {
+    height:100%;
     display: flex;
-    justify-content: center;
-    padding-right: 100px;
+    margin-right: 100px;
     font-family: 'Ubuntu Condensed', sans-serif;
     color: #FEE1D0;
     font-size: 25px;
-}
-nav{
-    height: 100%;
+    align-items:center;
 }
 
-nav ul{
+header nav{
+    display:flex;
+}
+
+header nav ul{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li{
+header nav ul li{
     margin: 0px 20px;
     list-style: none;
 }
 
-nav ul li a{
+header nav ul li a{
     color: #47525E;
     font-size: 25px;
 }
 
-.select{
+header nav ul li a:hover{
+    color: #F2ECE9;
+}
+
+
+@media screen and (max-width: 970px){
+    header, .container_header {
+        flex-direction: column;
+    }
+
+    .title h5, .title h5 a{
+        margin-right:0;
+    }
+    header nav{
+        background-color: rgb(191,162,144, 0.3);
+    }
+}
+
+@media screen and (max-width: 500px){
+    header nav ul li a {
+        font-size: 18px;
+    }
+}
+
+
+/*.select{
     background: lavenderblush;
     padding: 10px 30px;
     color: #47525E;
     border-radius: 20px;
-}
+}*/
 
-/*LA PARTE COVER*/
+/* PRIMERA SECCION */
+
 .cover{
     width: 100%;
     padding-bottom: 60px;
     font-family: 'Ubuntu Condensed', sans-serif;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 .container_cover{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    background: #FEE1D0;
+    background-color: #FEE1D0;
+    border-radius: 10px;
 }
 
-.cover.container_info{
+.container_info{
     max-width: 400px;
     margin-top: 40px;
     z-index: 2;
 }
 
-.cover h1{
-    margin-top: 30px;
-    max-width: 400px;
+.cover h1, .cover h2{
     font-size: 80px;
     font-weight: 900;
+}
+
+.cover h1{
     color: #47525E;
 }
 
 .cover h2{
-    font-size: 80px;
-    font-weight: 900;
     color: #E18274;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .cover p{
-    margin-top: 10px;
-    font-size: 30px;
+    margin: 10px 0px;
+    font-size: 25px;
     color: #8190A5;
     font-family: 'Lato', sans-serif;
 }
 
-main.btn{
-    margin-top: 80px;
-    padding: 50px;
+.btn{
+    padding: 0px 70px;
     display: flex;
+
 }
 .btn img{
     width: 180px;
@@ -176,13 +221,52 @@ main.btn{
     box-shadow: 1px 1px 30px -5px #20202085;
 }
 
-/*LA PARTE DEL CUERPO DE LA PÁGINA*/
+.cover-img {
+    max-height: 420px;
+    display: flex;
+    width: auto;
+    margin:auto;
+    overflow: hidden;
+}
+
+.vector-img {
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .cover {
+        width: 90%;
+        top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container_cover {
+        flex-direction:column;
+        justify-content: center;
+    }
+    .container_info {
+        margin:auto;
+    }
+    .cover-img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .vector-img{
+        width: 300px;
+        margin:auto;
+    }
+}
+
+
+/* CUERPO */
 
 .container_article h2{
     text-align: center;
     font-size: 40px;
     color: #E18274;
-    margin-top: 30px;
+    margin-top: 155px;
     font-weight: 100;
 }
 
@@ -236,32 +320,45 @@ main.btn{
     color: #E18274;
     background: lemonchiffon;
 }
+@media (max-width: 1110px){
+    .container_article h2{
+        margin-bottom: 15px;
+    }
+}
 
-/*LA PARTE DEL FOOTER, PARTE INFERIOR DEL LANDIN PAGE*/
-#footer {
+@media (max-width: 740px){
+    .container_body {
+        width: 60%;
+    }
+}
+
+/* FOOTER */
+footer {
     position: relative;
     margin-top: 100px;
     bottom:0px;
-    height: 40px;
     width:100%;
     background-color: #F2ECE9;
-    display:inline-flex;
+    display:flex;
+    flex-direction: column;
     align-items: center;
+    padding: 40px 0;
 }
 
 .footer-link{
-    padding-left: 100px;
-    height:60px;
-    width:60px;
-    border-radius: 40px;
-    font-size: 30px;
     display:flex;
     align-items:center;
     justify-content: center;
+    justify-items: center;
     color: #47525e;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-link a{
+    height:38px;
+    width:38px;
+    font-size: 30px;
     margin-right: 15px;
     border-radius: 40px;
     cursor:pointer;
@@ -275,9 +372,21 @@ main.btn{
     background-color: #BFA290;
     color: #F5F5F5;
 }
-.box_copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
+
+footer p {
+    margin:auto;
+    text-align:center;
+    line-height: 1.6;
+}
+
+@media (max-width: 1110px){
+    footer{
+        margin-top: 500px;
+    }
+}
+
+@media (max-width: 740px){
+    footer{
+        margin-top: 1000px;
+    }
 }
