@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&family=Ubuntu+Condensed&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 70px;
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background: #BFA290;
+}
+
+.container_header{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header.logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 66px;
+}
+
+.container_nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #47525E;
+    font-size: 25px;
+}
+
+.select{
+    background: lavenderblush;
+    padding: 10px 30px;
+    color: #47525E;
+    border-radius: 20px;
+}
+
+/*LA PARTE COVER*/
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-top: 100px;
+}
+.container_cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #FEE1D0;
+}
+
+.cover.container_info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+.cover h1{
+    margin-top: 30px;
+    max-width: 400px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #47525E;
+}
+
+.cover h2{
+    font-size: 80px;
+    font-weight: 900;
+    color: #E18274;
+    margin-top: -10px;
+}
+
+.cover p{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #8190A5;
+    font-family: 'Lato', sans-serif;
+}
+.cover input[type="button"]{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: #E18274;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+.cover input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+
+/*LA PARTE DEL FOOTER, PARTE INFERIOR DEL LANDIN PAGE*/
+footer{
+    width: 100%;
+    padding: 10px;
+    background-image: url("../img/background-footer (1).svg");
+    background-size: cover;
+    background-color:#E18274;
+
+}
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 45px;
+}
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+.box_footer .logo img{
+    width: 300px;
+    margin-top: 5px;
+}
+.box_footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.box_footer h2{
+    margin-bottom: 30px;
+    color: #242424;
+    font-weight: 700;
+}
+.box_footer a{
+    margin-top: 10px;
+    color: #242424;
+    font-weight: 600;
+}
+.box_footer a:hover{
+    opacity: 0.8;
+}
+.box_footer a .fab{
+    font-size: 20px;
+}
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
