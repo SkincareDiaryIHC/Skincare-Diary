@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&family=Ubuntu+Condensed&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+::selection{
+    background: #eeeeee none repeat scroll 0 0;
+    color: #777777;
+}
+
+::-moz-selection {
+    background: #eeeeee none repeat scroll 0 0;
+    color: #777777;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#BFA290;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    height:0;
+    background-color: transparent;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    background: #BFA290;
+}
+
+.container_header{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header.logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo img{
+    width: 70px;
+}
+
+.container_nav{
+    position: relative;
+    height: 100%;
+}
+
+nav ul h5 a{
+    display: flex;
+    justify-content: center;
+    padding-right: 100px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #FEE1D0;
+    font-size: 25px;
+}
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #47525E;
+    font-size: 25px;
+}
+
+.select{
+    background: lavenderblush;
+    padding: 10px 30px;
+    color: #47525E;
+    border-radius: 20px;
+}
+
+/*LA PARTE COVER*/
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-top: 100px;
+}
+.container_cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #FEE1D0;
+}
+
+.cover.container_info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.cover h1{
+    margin-top: 30px;
+    max-width: 400px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #47525E;
+}
+
+.cover h2{
+    font-size: 80px;
+    font-weight: 900;
+    color: #E18274;
+    margin-top: -10px;
+}
+
+.cover p{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #8190A5;
+    font-family: 'Lato', sans-serif;
+}
+
+main.btn{
+    margin-top: 80px;
+    padding: 50px;
+    display: flex;
+}
+.btn img{
+    width: 180px;
+}
+.cover input[type="button"]{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: #E18274;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+.cover input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+/*LA PARTE DEL CUERPO DE LA PÁGINA*/
+
+.container_article h2{
+    text-align: center;
+    font-size: 40px;
+    color: #E18274;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+.container_body{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container_body .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container_body .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.container_body .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container_body .card h4{
+    font-weight: 600;
+    color: #47525E;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+}
+
+.container_body .card p{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container_body .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #E18274;
+    background: lemonchiffon;
+}
+
+/*LA PARTE DEL FOOTER, PARTE INFERIOR DEL LANDIN PAGE*/
+#footer {
+    position: relative;
+    margin-top: 100px;
+    bottom:0px;
+    height: 40px;
+    width:100%;
+    background-color: #F2ECE9;
+    display:inline-flex;
+    align-items: center;
+}
+
+.footer-link{
+    padding-left: 100px;
+    height:60px;
+    width:60px;
+    border-radius: 40px;
+    font-size: 30px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color: #47525e;
+}
+
+.footer-link a{
+    margin-right: 15px;
+    border-radius: 40px;
+    cursor:pointer;
+    transition:all ease 0.5s;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-link a:hover {
+    background-color: #BFA290;
+    color: #F5F5F5;
+}
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
