@@ -117,10 +117,20 @@ header nav ul li a{
     font-size: 25px;
 }
 
+header nav ul li a2{
+    color: #F2ECE9;
+    font-size: 25px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
 header nav ul li a:hover{
     color: #F2ECE9;
 }
 
+header nav ul li a2:hover{
+    color: #d9c7bc;
+}
 
 @media screen and (max-width: 970px){
     header, .container_header {
