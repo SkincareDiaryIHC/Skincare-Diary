@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77eb499f-953a-46c8-a060-b41e38f0b7e7" name="Changes" comment="Diario de belleza y cambios finales">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="77eb499f-953a-46c8-a060-b41e38f0b7e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../LANDING PAGE FINAL1.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LANDING PAGE FINAL1.0/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Landing Page Ingles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,16 +44,9 @@
       <option name="presentableId" value="Default" />
       <updated>1637478543759</updated>
       <workItem from="1637478545023" duration="25583000" />
-      <workItem from="1637582558639" duration="902000" />
+      <workItem from="1637582558639" duration="587000" />
+      <workItem from="1637584838280" duration="2724000" />
     </task>
-    <task id="LOCAL-00001" summary="Diario de belleza y cambios finales">
-      <created>1637584568549</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1637584568549</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,9 +62,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Diario de belleza y cambios finales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diario de belleza y cambios finales" />
   </component>
 </project>
